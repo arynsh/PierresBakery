@@ -4,13 +4,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputWord = $("input#input1").val();
-    var vowelList = ["a", "e", "i", "o", "u"];
-    //input: apple
     var wordString = inputWord.split("");
+    var vowelList = ["a", "e", "i", "o", "u"];
     console.log("This is the input word:" + inputWord);
-    //input1.2 = 'a'
+    //
     var firstLetter = $("input#input1").val().charAt(0);
-    var toAppend = []; // array of consonants 
+    var toAppend = []; // array of consonants
     var numberToStart = toAppend.length;     // this is the number to start the slice
     var startingWithVowel = inputWord.slice(numberToStart); // will contain inputWord minus beginning consecutive consonants
     var appendedWord = startingWithVowel.append(toAppend);  // will add consecutive consonants to end of word!
@@ -35,6 +34,9 @@ $(document).ready(function() {
       } // to do: tell loop to break when it hits a vowel following consonants
     }
 
+    $(".output1").text(output);
+    $(".output2").text(result);
+    $("#results").show();
   });
 });
 
