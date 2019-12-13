@@ -20,7 +20,7 @@ namespace Bakery
 
             if (BreadQuantity <= 2)
             {
-                cost = BreadQuantity * 2;
+                cost = BreadQuantity * 5;
             }
             else
             {
