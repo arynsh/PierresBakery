@@ -7,13 +7,11 @@ namespace Bakery
     {
         public int BreadQuantity { get; set; }
         public int Price { get; set; }
-
         public Bread(int breadQuantity, int price)
         {
            BreadQuantity = breadQuantity;
            Price = price;
         }
-        
        public int CalculateCost()
         {
             int cost;
@@ -22,8 +20,6 @@ namespace Bakery
             
             return cost;
         }
-
-
     }
 
     class Pastry
@@ -36,7 +32,6 @@ namespace Bakery
             PastryQuantity = pastryQuantity;
             Price = price;
         }
-        
         public int CalculateCost()
         {
             int cost;
@@ -52,7 +47,6 @@ namespace Bakery
             
             return cost;
         }
-
     }
     
 }
