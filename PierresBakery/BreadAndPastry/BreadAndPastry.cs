@@ -14,10 +14,22 @@ namespace Bakery
             Price = price;
         }
         
-        public int CalculateCost()
+       public int CalculateCost()
         {
+            int cost;
 
+            if (BreadQuantity <= 2)
+            {
+                cost = PastryQuantity * 2;
+            }
+            else
+            {
+                cost = (10 * (BreadQuantity / 3)) + (5 * (BreadQuantity % 3));
+            }
+            
+            return cost;
         }
+
 
     }
 
@@ -42,8 +54,10 @@ namespace Bakery
             }
             else
             {
-                cost = (PastryQuantity / 3)   // 13 pastries; 13 / 3 = 4 remainder 1; 4 x 5 = 20 plus 1 x 2 = 22;
+                cost = (5 * (PastryQuantity / 3)) + (2 * (PastryQuantity % 3));   
             }
+            
+            return cost;
         }
 
     }

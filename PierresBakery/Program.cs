@@ -20,6 +20,12 @@ namespace Bakery
             Bread breads = new Bread (numBread, 5);  
             Pastry pastries = new Pastry (numPastries, 2); 
 
+            int breadCost = breads.CalculateCost();
+            int pastryCost = pastries.CalculateCost(); 
+            int total = (breadCost + pastryCost);
+            string stringTotal = total.ToString();
+            Console.WriteLine(stringTotal);
+
             // if (numBread != 0)
             // {
             //     bakedGoods.Add(numBread);
