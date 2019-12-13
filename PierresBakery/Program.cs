@@ -23,7 +23,7 @@ namespace Bakery
             int pastryCost = pastries.CalculateCost(); 
             int total = (breadCost + pastryCost);
             string stringTotal = total.ToString();
-            Console.WriteLine(stringTotal);
+            Console.WriteLine("Your total comes out to: $"+ stringTotal);
 
         }
     }

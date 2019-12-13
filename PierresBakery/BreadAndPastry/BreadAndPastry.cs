@@ -18,14 +18,7 @@ namespace Bakery
         {
             int cost;
 
-            if (BreadQuantity <= 2)
-            {
-                cost = BreadQuantity * 5;
-            }
-            else
-            {
                 cost = (10 * (BreadQuantity / 3)) + (5 * (BreadQuantity % 3));
-            }
             
             return cost;
         }
