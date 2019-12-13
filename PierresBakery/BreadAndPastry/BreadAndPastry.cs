@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace Bakery
 {
-    class BreadClass
+    class Bread
     {
-        public string BreadQuantity { get; set; }
+        public int BreadQuantity { get; set; }
         public int Price { get; set; }
 
         public Bread(int breadQuantity, int price)
         {
-            BreadQuantity = breadQuantity;
-            Price = price;
+           BreadQuantity = breadQuantity;
+           Price = price;
         }
         
        public int CalculateCost()
@@ -20,7 +20,7 @@ namespace Bakery
 
             if (BreadQuantity <= 2)
             {
-                cost = PastryQuantity * 2;
+                cost = BreadQuantity * 2;
             }
             else
             {
@@ -33,9 +33,9 @@ namespace Bakery
 
     }
 
-    class PastryClass
+    class Pastry
     {
-        public string PastryQuantity { get; set; }
+        public int PastryQuantity { get; set; }
         public int Price { get; set; }
 
         public Pastry(int pastryQuantity, int price)

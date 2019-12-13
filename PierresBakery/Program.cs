@@ -17,8 +17,8 @@ namespace Bakery
             Console.WriteLine("How many pastries would you like? ['0' to skip to checkout]");                string stringPastries = Console.ReadLine();
             int numPastries = int.Parse(stringPastries);
 
-            Bread breads = new Bread (numBread, 5);  
-            Pastry pastries = new Pastry (numPastries, 2); 
+            Bread breads = new Bread(numBread, 5);  
+            Pastry pastries = new Pastry(numPastries, 2); 
 
             int breadCost = breads.CalculateCost();
             int pastryCost = pastries.CalculateCost(); 
