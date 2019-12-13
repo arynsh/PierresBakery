@@ -34,7 +34,16 @@ namespace Bakery
         
         public int CalculateCost()
         {
-            
+            int cost;
+
+            if (PastryQuantity <= 2)
+            {
+                cost = PastryQuantity * 2;
+            }
+            else
+            {
+                cost = (PastryQuantity / 3)   // 13 pastries; 13 / 3 = 4 remainder 1; 4 x 5 = 20 plus 1 x 2 = 22;
+            }
         }
 
     }
